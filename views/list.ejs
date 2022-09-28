@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejs todo</title>
+  </head>
+  <body style="background-color: yellow ">
+<h1><%= kindOfDay %></h1>
+
+<ol style="background-color: purple ">
+  <li>prepare food</li>
+  <li>buy food</li>
+  <% for (i = 0; i<newListItems.length; i++) { %>
+    <li> <%= newListItems[i] %> </li>
+<%  } %>
+</ol>
+
+<form action="/" method="post">
+  <input type="text" name="newItems">
+  <button type="submit" name="button">Add</button>
+
+</form>
+
+  </body>
+</html>
